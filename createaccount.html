@@ -1,46 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create an Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eafaf1;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            border: 2px solid #68b684;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        h2 {
+            color: #68b684;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        fieldset {
+            border: 1px solid #68b684;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        legend {
+            color: #68b684;
+            font-weight: bold;
+        }
+        input[type="submit"] {
+            background-color: #68b684;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #56a571;
+        }
+    </style>
 </head>
 <body>
-
+    <form action="index.html" method="post">
+        <h2>Create an Account</h2>
         <label>Username:</label>
-        <input type="text" name="username" maxlength="30"><br><br>
-
-        <p>Safety Question: What is your favorite day of the week?:</p>
+        <input type="text" name="username" maxlength="30">
+        <p>Safety Question: What is your favorite day of the week?</p>
         <input type="radio" name="favday" value="Monday"> Monday<br>
-        <input type="radio" name="favday" value="Tuesday"> Tuesday <br>
+        <input type="radio" name="favday" value="Tuesday"> Tuesday<br>
         <input type="radio" name="favday" value="Wednesday"> Wednesday<br>
-        <input type="radio" name="favday" value="Thursday"> Thursday <br>
+        <input type="radio" name="favday" value="Thursday"> Thursday<br>
         <input type="radio" name="favday" value="Friday"> Friday<br>
         <input type="radio" name="favday" value="Saturday"> Saturday<br>
-        <input type="radio" name="favday" value="Sunday"> Sunday<br><br>
-
-        </select><br><br>
-
+        <input type="radio" name="favday" value="Sunday"> Sunday<br>
         <fieldset>
             <legend>Shipping Address</legend>
             <label>Address Line 1:</label>
-            <input type="text" name="address1"><br>
+            <input type="text" name="address1">
             <label>Address Line 2:</label>
-            <input type="text" name="address2"><br>
+            <input type="text" name="address2">
             <label>City:</label>
-            <input type="text" name="city"><br>
+            <input type="text" name="city">
             <label>State:</label>
-            <input type="text" name="state"><br>
+            <input type="text" name="state">
             <label>Zip:</label>
-            <input type="text" name="zip"><br>
-        </fieldset><br>
-
+            <input type="text" name="zip">
+        </fieldset>
         <label>Password:</label>
-        <input type="password" name="pword"><br><br>
-
+        <input type="password" name="pword">
         <input type="hidden" name="userid" value="12345">
-
         <input type="submit" value="Submit">
-
-<form action="index.html" method="post">
     </form>
 </body>
 </html>
+
